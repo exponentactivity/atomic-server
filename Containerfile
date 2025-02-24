@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/silverblue-main:latest
+FROM ghcr.io/secureblue/securecore-main-hardened:latest
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:stable
