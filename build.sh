@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux starship neovim bashtop
+dnf install -y tmux neovim btop
 
 # Use a COPR Example:
 #
@@ -18,6 +18,9 @@ dnf install -y tmux starship neovim bashtop
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+
+dnf -y copr enable atim/starship
+dnf -y install starship
 
 #### Example for enabling a System Unit File
 
