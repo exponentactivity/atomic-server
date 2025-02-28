@@ -25,4 +25,4 @@ dnf5 -y install starship
 
 #### Example for enabling a System Unit File
 
-systemctl enable podman.socket
+systemctl enable podman.socket rpm-ostreed-automatic.timer
