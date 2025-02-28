@@ -21,8 +21,10 @@ dnf install -y tmux neovim btop
 dnf5 -y install 'dnf5-command(copr)'
 
 dnf5 -y copr enable atim/starship
-dnf5 -y install starship
+dnf5 -y copr enable lihaohong/chezmoi
+dnf5 -y install starship chezmoi
 
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket rpm-ostreed-automatic.timer
+systemctl --global enable chezmoi-initialize.service
