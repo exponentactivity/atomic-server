@@ -18,9 +18,10 @@ dnf install -y tmux neovim btop
 # dnf5 -y install package
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
+dnf5 -y install 'dnf5-command(copr)'
 
-dnf -y copr enable atim/starship
-dnf -y install starship
+dnf5 -y copr enable atim/starship
+dnf5 -y install starship
 
 #### Example for enabling a System Unit File
 
