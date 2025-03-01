@@ -10,7 +10,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf install -y tmux neovim btop xonsh
+dnf install -y tmux neovim btop xonsh python3-pygments python3-prompt-toolkit python3-setproctitle
 
 # Use a COPR Example:
 #
