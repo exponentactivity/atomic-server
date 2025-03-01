@@ -1,0 +1,10 @@
+[Unit]
+Description=Set the User Shell to Xonsh
+ConditionFileIsExecutable=/usr/bin/xonsh
+
+[Service]
+ExecStart=/usr/sbin/usermod --shell /usr/bin/xonsh core
+Type=oneshot
+
+[Install]
+WantedBy=multiuser.target
