@@ -27,4 +27,3 @@ dnf5 -y install starship chezmoi
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket rpm-ostreed-automatic.timer set-shell.service
-systemctl --global enable chezmoi-initialize.service
